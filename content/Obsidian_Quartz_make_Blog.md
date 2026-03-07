@@ -1,7 +1,7 @@
 ---
-title: Obsidian_Quartz 打造个人Blog
+title: Obsidian_Quartz make Blog
 date: 2026-03-07
-draft: true
+draft: false
 slug: ""
 tags:
   - quartz
@@ -13,7 +13,7 @@ lang: zh-cn
 weight: 0
 author: enzo
 ---
-文本提供 **搭建个人Blog** 的个人经验，尤其是使用Obsidian进行笔记记录的用户。基于Obsidian + Quartz4 搭建个人Blog
+基于Obsidian + Quartz4 搭建个人Blog。文本提供 **搭建Blog** 的个人经验，尤其推荐给使用Obsidian进行笔记管理的同学。
 
 # Quartz4的使用 & 注意事项
 
@@ -87,3 +87,12 @@ cmd //c mklink //d "source/pathA" "target/pathB"
 > [!warning] 使用鼠标在obsidian的左侧栏拖动文件，无效。需要使用右键 ->  移动到
 
 ![[Pasted image 20260307203628.png]]
+
+配置完成后，你就可以在原来的Obsidian 目录下进行笔记编写，将决定作为blog 发布的文件移动到PathA中即可。
+
+在Quartz 的content 中会出现对应的笔记。
+`npx quartz build --serve` 进行本地查看效果。
+`npx quartz sync --no-pull` 将本地变更同步到git 仓库，进行线上Blog发布。
+
+> [!warning] 文本中 front-matter 或者说文件属性的draft 不能是true， true是不会被quartz解析发布的。
+
