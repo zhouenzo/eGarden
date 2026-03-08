@@ -10,6 +10,7 @@ export const sharedPageComponents: SharedLayout = {
     links: {
       GitHub: "https://github.com/zhouenzo/eGarden.git",
       "Discord Community": "https://discord.gg/cRFFHYye7t",
+      "署名-非商业性使用 4.0 (CC BY-NC 4.0)": "https://creativecommons.org",
     },
   }),
 }
