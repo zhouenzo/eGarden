@@ -13,10 +13,11 @@ const config: QuartzConfig = {
     enableSPA: true,
     enablePopovers: true,
     analytics: {
-      provider: "plausible",
+      provider: 'google',
+      tagId: 'G-CE0RC8F8VL'
     },
     locale: "en-US",
-    baseUrl: "zhouenzo.github.io",
+    baseUrl: "zhouenzo.github.io/eGarden",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
