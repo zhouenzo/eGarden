@@ -1,0 +1,16 @@
+# 依赖
+node_modules/
+
+# Quartz 构建产物
+public/
+
+# Quartz 缓存
+.quartz-cache/
+quartz/.quartz-cache/
+
+# Obsidian 工作区（文章正文不动）
+.obsidian/
+
+# 系统与编辑器
+.DS_Store
+Thumbs.db
